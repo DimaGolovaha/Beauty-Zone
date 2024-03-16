@@ -1,0 +1,85 @@
+/* Base */
+:root {
+    --color-text-primery-dark: #011C44;
+    --color-primery-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-primery-blue: #2B7FFF;
+    --color-privacy: #747272;
+}
+
+ul {
+    list-style-type: none;
+}
+body {
+    box-sizing: border-box;
+    color: var(--color-text-primery-dark);    
+}
+/* Link */
+.link {
+    color: var(--color-text-primery-dark);
+}
+.link:hover {
+    color: var(--color-primery-blue);
+}
+/* Button */
+.button {
+    color: #FFFFFF;
+    background-color: #2B7FFF;    
+    
+    border: 2px solid rgb(43, 127, 255);
+    border-radius: 32px;
+    cursor: pointer;
+}
+.button:hover {
+    color: #011C44;
+    background-color: transparent;
+    border: 2px solid #2B7FFF;
+    border-radius: 32px;
+    cursor: pointer;
+}
+/* Hero(main) section */
+.hero-title {
+    color: var(--color-primery-blue);
+}
+.button {
+
+}
+.consultation {
+    color: #4A4A4A;
+}
+/* About-us section */
+
+.title-span {
+    color: var(--color-primery-blue);
+}
+/* why-us section */
+.card-style {
+    color: var(--color-dark);
+}
+.title-dark {
+    color: var(--color-dark);
+}
+
+/* Our procedures section */
+.procedure-card {
+    color: var(--color-primery-light);
+}
+/* Contacts section */
+.privacy {
+    color: var(--color-privacy);
+}
+/* Footer */
+
+footer .link {
+    color: var(--color-primery-light);
+}
+
+footer{
+    background-color: gray;
+}
+.address a {
+    color: var(--color-primery-light);
+}
+a {
+    color: var(--color-primery-light);
+}
