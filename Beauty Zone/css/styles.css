@@ -1,3 +1,60 @@
+/* Fonts */
+
+/* play-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-500 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+
+}
+
 /* Base */
 :root {
     --color-text-primery-dark: #011C44;
@@ -5,81 +62,165 @@
     --color-dark: #000000;
     --color-primery-blue: #2B7FFF;
     --color-privacy: #747272;
+    --color-consultation: #4A4A4A;
 }
 
 ul {
     list-style-type: none;
 }
 body {
-    box-sizing: border-box;
-    color: var(--color-text-primery-dark);    
+        color: var(--color-text-primery-dark);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;        
 }
+/* Header */
+
 /* Link */
 .link {
     color: var(--color-text-primery-dark);
+    text-decoration: none;
+    line-height: 21px;
 }
 .link:hover {
     color: var(--color-primery-blue);
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 21px;
 }
+
+/* Hero(main) section */
+.clinic {
+    line-height: 21px;
+}
+
+.hero-title {
+    color: var(--color-primery-blue);
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 114px;
+    text-transform: capitalize;
+
+}
+
 /* Button */
 .button {
-    color: #FFFFFF;
-    background-color: #2B7FFF;    
-    
+    color: var(--color-primery-light);
+    background-color: var(--color-primery-blue);    
     border: 2px solid rgb(43, 127, 255);
     border-radius: 32px;
     cursor: pointer;
+    font-weight: 700;
+    font-weight: 600;
+    line-height: 21px;
 }
 .button:hover {
-    color: #011C44;
+    color: var(--color-text-primery-dark);
     background-color: transparent;
-    border: 2px solid #2B7FFF;
+    border: 2px solid var(--color-primery-blue);
     border-radius: 32px;
     cursor: pointer;
-}
-/* Hero(main) section */
-.hero-title {
-    color: var(--color-primery-blue);
-}
-.button {
-
+    font-weight: 700;
+    font-weight: 600;
+    line-height: 21px;
 }
 .consultation {
-    color: #4A4A4A;
+    color: var(--color-consultation);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
 }
 /* About-us section */
-
+.section-title {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+.about-us-section .title-span {
+    text-transform: capitalize;
+}
 .title-span {
     color: var(--color-primery-blue);
 }
-/* why-us section */
-.card-style {
-    color: var(--color-dark);
+.about-us-section p {
+    font-size: 22px;
+    line-height: 38px;    
 }
+p .beautyzone {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* why-us section */
 .title-dark {
     color: var(--color-dark);
 }
-
+.why-us-card {
+    color: var(--color-dark);
+    font-size: 18px;
+    line-height: 24px;
+}
 /* Our procedures section */
 .procedure-card {
     color: var(--color-primery-light);
+    font-size: 22px;
+    line-height: 26px;
 }
+
 /* Contacts section */
-.privacy {
+.appointment {
+    color: var(--color-primery-light);
+    font-weight: 700;
+    font-size: 22px;
+    }
+.contacts-privacy {
     color: var(--color-privacy);
+    font-size: 12px;
 }
+.contacts-privacy-link {
+    color: var(--color-privacy);
+    text-decoration: underline;
+}
+
 /* Footer */
 
-footer .link {
+footer {
+    background-color: #011F4A; 
+}
+.footer-link {
     color: var(--color-primery-light);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+}
+.footer-link:hover {
+    color: var(--color-primery-blue);
+    
 }
 
-footer{
-    background-color: gray;
-}
-.address a {
+.address {
     color: var(--color-primery-light);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;        
+    line-height: 19px;
 }
-a {
+.address:hover {
+    color: var(--color-primery-blue);
+}
+.privacy-link {
     color: var(--color-primery-light);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+       
+}
+.privacy-link:hover {  
+    color: var(--color-primery-blue);
+}
+.privacy {
+    color: var(--color-privacy);
+    font-size: 13px;
+    line-height: 15px;
 }
