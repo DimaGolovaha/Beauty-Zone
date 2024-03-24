@@ -1,2 +1,2 @@
-# homework-1
+# Working project
 Beauty zone project
