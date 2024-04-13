@@ -84,13 +84,20 @@ ul {
   margin: 0;
 }
 body {
+  max-width: 1440px;
   color: var(--color-text-primery-dark);
+  background-color: var(--color-primery-light);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   margin: 0;
-  /* Временный фон */
-  /* background-color: lightblue; */
+  margin: 0 auto;
+  position: relative;  
+  /* Background central section */
+  background-image: url(../Images/background-wave.png);
+  background-repeat: no-repeat; 
+  background-position: center 1450px;
+   /* --------------------------- */
 }
 
 /* For all section */
@@ -106,7 +113,7 @@ body {
 
 /* Header -------------------------------------------------*/
 
-header {
+.header {
   max-width: 1440px;
   width: 100%;
   height: 106px;
@@ -114,7 +121,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 8px;
+  background-color: #ffffff40;
+  position: absolute;
 }
 .container-header {
   width: 100%;
@@ -171,11 +179,9 @@ header {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 551px;
+  height: 700px;
   background-image: url(../Images/main-section-background.jpg);
-  background-position: -191px -1198px;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 .container-main {
@@ -185,7 +191,7 @@ header {
   margin: 0 auto;
 }
 .clinic {
-  padding-top: 16px;
+  padding-top: 125px;
   margin-top: 0;
   margin-bottom: 16px;
   line-height: 21px;
@@ -241,6 +247,23 @@ header {
   margin: 0 auto;
   padding-bottom: 88px;
 }
+/* Decoration  */
+.star-1 {
+  position: absolute;
+  top: 336px;
+  left: 858px;
+}
+.star-2 {
+  position: absolute;
+  top: 32px;
+  left: 1212px;
+}
+.star-3 {
+  position: absolute;
+  top: 270px;
+  left: 1213px;
+}
+
 .container-about-us {
   width: 100%;
   max-width: 1240px;
@@ -249,6 +272,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
+  position: relative;
 }
 .about-content {
   margin-top: 40px;
@@ -310,8 +334,8 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 48px;
-    /* Временный фон */
-  background-color: lightblue;
+  /* Временный фон */
+  /* background-color: lightblue; */
 }
 .title-box {
   width: 432px;
@@ -332,9 +356,6 @@ header {
   gap: 56px;
 }
 .why-us-card {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   width: 316px;
   height: 181px;
   border: 1px solid transparent;
@@ -350,6 +371,9 @@ header {
   width: 252px;
   height: 133px;
   margin: 24px 32px;
+}
+.why-card-content h5 {
+  text-align: center;
 }
 .why-icon-box {
   width: 48px;
@@ -427,7 +451,6 @@ header {
 } */
 .procedures-cards {
   display: flex;
-  justify-content: center;
   gap: 16px;
   color: var(--color-primery-light);
   font-size: 22px;
@@ -438,13 +461,23 @@ header {
   width: 152px;
   height: 52px;
   margin: 372px 77px 32px 115px;
-  border: 1px solid blue;
+  border: 1px solid transparent;
 }
 .procedures-cards article {
   width: 344px;
   height: 456px;
   border: 1px solid transparent;
   border-radius: 4px 120px 4px 120px;
+}
+.gradient {
+  width: 344px;
+  height: 456px;
+  border: 0.1px solid transparent;
+  border-radius: 4px 120px 4px 120px;
+  background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0)
+   48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+   background-repeat: no-repeat;
+
 }
 .pro-card1 {
   background-image: url(../Images/procedures\ image\ 1.jpeg);
@@ -457,6 +490,9 @@ header {
 .pro-card3 {
   background-image: url(../Images/procedures\ image\ 3.jpeg);
   background-position: -52px -2px;
+}
+.rotate-arrow {
+  transform: rotate(180 deg);
 }
 
 /* Contacts section ---------------------------------------------------------*/
@@ -563,7 +599,7 @@ header {
 }
 
 /* Footer -------------------------------------------------------*/
-footer {
+.footer {
   padding-top: 50px;
   margin: 0 auto;
   width: 100%;
@@ -575,12 +611,20 @@ footer {
   background-position: center;
   background-size: cover;
 }
+.footer-image {
+  max-width: 1440px;
+  height: 278px;
+  background-image: url(../Images/footer\ image.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 76px; 
+}
 .container-footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 .footer-link {
   color: var(--color-primery-light);
@@ -652,4 +696,7 @@ footer {
   color: var(--color-privacy);
   font-size: 13px;
   line-height: 15px;
+}
+.footer-image {
+  
 }
