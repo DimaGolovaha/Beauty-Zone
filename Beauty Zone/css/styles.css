@@ -92,12 +92,12 @@ body {
   font-size: 18px;
   margin: 0;
   margin: 0 auto;
-  position: relative;  
+  position: relative;
   /* Background central section */
   background-image: url(../Images/background-wave.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: center 1450px;
-   /* --------------------------- */
+  /* --------------------------- */
 }
 
 /* For all section */
@@ -474,10 +474,13 @@ body {
   height: 456px;
   border: 0.1px solid transparent;
   border-radius: 4px 120px 4px 120px;
-  background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0)
-   48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
-   background-repeat: no-repeat;
-
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+  background-repeat: no-repeat;
 }
 .pro-card1 {
   background-image: url(../Images/procedures\ image\ 1.jpeg);
@@ -569,7 +572,7 @@ body {
   height: 32px;
   font-size: 13px;
   line-height: 1.15;
-  border: 2px solid #747272;
+  border: 1px solid var(--color-privacy);
   border-radius: 32px;
   margin: 0;
 }
@@ -582,6 +585,7 @@ body {
   align-items: center;
   gap: 8px;
 }
+/* Button need fix!!!! */
 .contacts-button {
   margin: 0;
 }
@@ -617,14 +621,14 @@ body {
   background-image: url(../Images/footer\ image.png);
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: 76px; 
+  background-position-y: 76px;
 }
 .container-footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1240px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .footer-link {
   color: var(--color-primery-light);
@@ -697,6 +701,71 @@ body {
   font-size: 13px;
   line-height: 15px;
 }
-.footer-image {
-  
+
+/* Modal Window------------------------------------------------ */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  width: 720px;
+  height: 680px;
+  border-radius: 48px;
+  background-color: var(--color-text-primery-dark);
+  background-image: url(../Images/modal-background.png);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  fill: var(--color-primery-light);
+}
+.modal-container {
+  min-width: 435px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  gap: 40px;
+}
+.modal-title {
+  width: 435px;
+  height: 148px;
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74.05px;
+  text-align: center;
+  color: var(--color-primery-light);
+}
+.modal-form-box {
+  width: 310px;
+  height: 409px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.modal-form-flex {
+  width: 310px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--color-primery-light);
 }
