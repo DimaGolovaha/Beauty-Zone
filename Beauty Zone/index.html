@@ -159,7 +159,6 @@
           <div class="procedures-content-box">
             <div class="procedures-flex2">
               <div class="procedures-flex3">
-                <!-- !!!!Стрілка не змінила колір на білий!!!! -->
                 <button class="carousel-button" type="button">
                   <svg class="carousel-arrow">
                     <use href="./Images/icons.svg#icon-arrow"></use>
@@ -167,29 +166,28 @@
                 </button>
                 <ul class="procedures-cards">
                   <li>
-                    <article class="pro-card1">
+                    <article class="procedures-card pro-card1">
                       <div class="gradient">
                         <h4>Маски для обличчя</h4>
                       </div>
                     </article>
                   </li>
                   <li>
-                    <article class="pro-card2">
+                    <article class="procedures-card pro-card2">
                       <div class="gradient">
                         <h4>Ін'єкції для обличчя</h4>
                       </div>
                     </article>
                   </li>
                   <li>
-                    <article class="pro-card3">
+                    <article class="procedures-card pro-card3">
                       <div class="gradient">
                         <h4>Очищення обличчя</h4>
                       </div>
                     </article>
                   </li>
                 </ul>
-                <!-- !!!!Стрілка не змінила колір на білий!!!! -->
-                <button class="carousel-button" type="button">
+                <button class="carousel-button next" type="button">
                   <svg class="carousel-arrow rotate-arrow">
                     <use href="./Images/icons.svg#icon-arrow"></use>
                   </svg>
@@ -313,20 +311,34 @@
             Запишіться <span class="title-span">безкоштовно</span> <br />
             та отримайте подарунок
           </h4>
-          <div class="modal-form-flex">
-            <div class="data form">
-              <p>Ваше ім'я та прізвище</p>
+
+          <form class="modal-form" name="modal-form" autocomplete="on" novalidate>
+
+            <div class="form-field">
+              <label class="form-label visualy-hidden" for="user-name">Ваше ім'я та прізвище</label>
+              <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище">
             </div>
-            <div class="data form">Ваш номер телефону</div>
-            <div class="data form">Ваша електронна пошта</div>
-            <div class="contacts-flex5">
-              <button class="contacts-button button">Записатись безкоштовно</button>
-              <p class="contacts-privacy">
+
+            <div class="form-field">
+              <label class="form-label visualy-hidden" for="user-name">Ваш номер телефону</label>
+              <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону">
+            </div>
+
+            <div class="form-field">
+              <label class="form-label visualy-hidden" for="user-name">Ваша електронна пошта</label>
+              <input class="form-input" type="email" id="user-email" name="user-email"
+                placeholder="Ваша електронна пошта">
+            </div>
+
+            <div>
+              <button class="form-button button">Записатись безкоштовно</button>
+              <p class="contacts-privacy form-terms">
                 Натискаючи на кнопку я погоджуюсь
                 <a class="contacts-privacy-link" href="#">з політикою конфіденційності</a>
               </p>
             </div>
-          </div>
+
+          </form>
         </div>
       </div>
     </div>
